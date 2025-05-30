@@ -4,7 +4,7 @@ metadata:
   name: insurance-service
 spec:
   selector:
-    app: insurance-service
+    app: insurance-app
   ports:
     - protocol: TCP
       port: 8081
