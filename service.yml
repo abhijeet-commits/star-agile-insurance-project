@@ -4,8 +4,9 @@ metadata:
   name: insurance-service
 spec:
   selector:
-    app: insurance-app
+    app: insurance-service   # should match the labels in your deployment/pod
   ports:
     - protocol: TCP
       port: 8081
       targetPort: 8081
+  type: ClusterIP
