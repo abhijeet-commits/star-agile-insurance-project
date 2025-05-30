@@ -4,9 +4,10 @@ metadata:
   name: insurance-service
 spec:
   selector:
-    app: insurance-service   # should match the labels in your deployment/pod
+    app: insurance-service
   ports:
     - protocol: TCP
       port: 8081
       targetPort: 8081
-      nodeport: 8081
+      nodePort: 8081   # Force NodePort to be 8081 (must be in range 30000–32767 unless you change kubelet config)
+  type: NodePort
