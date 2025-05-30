@@ -9,5 +9,5 @@ spec:
     - protocol: TCP
       port: 8081
       targetPort: 8081
-      nodePort: 8081   # Force NodePort to be 8081 (must be in range 30000–32767 unless you change kubelet config)
+      nodePort: 30000   # Force NodePort to be 8081 (must be in range 30000–32767 unless you change kubelet config)
   type: NodePort
